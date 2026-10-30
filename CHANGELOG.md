@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.3 (2026-10-30)
+
+### Changed
+
+- `setup` explains the reason behind each step, so it handles cases its rules did not foresee. Suggests discovery as the next step.
+
 ## 0.0.2 (2026-10-30)
 
 ### Added

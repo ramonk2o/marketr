@@ -6,6 +6,7 @@ A Claude Code plugin with marketing skills. Each skill reads and writes a per-cl
 
 - Lean: add a file, section or skill only when it is useful now. If in doubt, put it in BACKLOG.md.
 - Every file in this repo is in English. Talk to the user in their language.
+- Skills explain why, not just what: each rule says what it protects ("write at the end of each block: sessions get interrupted and what is only in the conversation is lost"). A model that understands the reason generalizes to cases the rule did not foresee; bare MUSTs and NEVERs get followed literally or not at all.
 - The conventions of the generated project live in one place: `skills/setup/assets/rules.template.md`, which setup renders into the generated project's `.claude/rules/marketr.md`. Skills rely on those conventions and do not repeat them.
 
 ## Layout
