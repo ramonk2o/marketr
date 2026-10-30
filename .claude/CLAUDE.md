@@ -14,11 +14,15 @@ A Claude Code plugin with marketing skills. Each skill reads and writes a per-cl
 .claude-plugin/plugin.json        plugin manifest; the only place with the version
 .claude-plugin/marketplace.json   this repo is also the marketplace (ramonk2o-marketr)
 skills/<name>/SKILL.md            one folder per skill; extra material in references/ or assets/
+references/knowledge/<file>.md    how to fill each _knowledge file, shared by every skill that writes it
 example/_in/                      raw material of a fictional client, for testing
 BACKLOG.md  CHANGELOG.md  README.md  LICENSE
 ```
 
-- Reference a skill's own files with `${CLAUDE_SKILL_DIR}/...`. The working directory is the client's project, not this repo.
+- Reference a skill's own files with `${CLAUDE_SKILL_DIR}/...` and shared files with `${CLAUDE_PLUGIN_ROOT}/references/...`. The working directory is the client's project, not this repo.
+- Rules belong in the conventions template; shared references hold only how to do things (section meanings, examples). Move logic into a shared reference only when a second skill needs it.
+- Put a skill's permanent rules at the top of its SKILL.md: after compaction only its first ~5,000 tokens survive.
+- Each description says what the skill is for and what it is not for, to avoid collisions with other marketr skills.
 - Never name a file `CLAUDE.md` inside `skills/`: Claude would load it as instructions.
 - Marketr skills other than setup start by checking the generated project's "Conventions version" in its `.claude/rules/marketr.md`. If it is lower than the version they need, they suggest `/marketr:setup`.
 

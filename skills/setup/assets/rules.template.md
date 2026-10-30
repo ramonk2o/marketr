@@ -12,25 +12,29 @@ Managed by the marketr plugin. Conventions version: 1.
 
 ## Folders
 
-- `_in/`: raw material from the client (PDFs, screenshots, briefings, call notes). Read only: never edit, move or delete.
+- `_in/`: raw material from the client and the team's own notes and call transcripts. Name new files with a date prefix: `2026-10-30_call-kickoff.md`. Read only: never edit, move or delete.
 - `_knowledge/`: curated, durable knowledge about the client. The source every skill reads.
 - `_out/`: deliverables.
 - `decisions.md`: append-only history of decisions. To check the current state, read `_knowledge/`; search `decisions.md` for a term instead of reading it whole.
 
 ## Knowledge
 
-```
-_knowledge/
-  company.md        who the client is, history, current position, strengths
-  brand.md          tone of voice, personality, verbal identity
-  competitors.md
-  icp.md            ideal customer
-  products/<slug>/
-    product.md      what it is, price, differentiators, objections
-    positioning.md
-```
+Each file answers one question and has one owner skill that deepens it. Any skill may draft a missing file; the owner deepens that same file. Information that fits two files goes in the one whose question it answers; the other points there and never copies it.
 
-- Any company-level file can also exist in `products/<slug>/` with the same name. Read the company file first, then the product's: the product file overrides where they conflict and complements the rest.
+| File | Question | Owner | Sections |
+|---|---|---|---|
+| `company.md` | who we are | discovery | what it does, business model, size and stage, history (facts), portfolio and offer architecture, restrictions (legal, regulatory, forbidden claims and words), institutional proof |
+| `icp.md` | who buys | research | segments, decision maker and influencers, pains, desires, triggers, objections (in the customer's words, no answers), awareness level, where they are, literal language |
+| `competitors.md` | against whom | research | direct competitors, alternatives (including doing nothing), comparison, how they position, gaps |
+| `positioning.md` | why us | branding | category, for whom, main difference, reason to believe, core promise, message pillars |
+| `brand.md` | how we speak | branding | personality, tone by context, vocabulary (use, avoid for style), told story, right and wrong examples |
+| `marketing.md` | what we do and what worked | discovery | dated goals with KPIs, budget, approvers, journey and sales process, channels and their state, what was tested and results, recurring seasonality, asset inventory (what and where, not the content) |
+| `products/<slug>/product.md` | what we sell (products or services) | discovery | what it is, mechanism, transformation, segment served (pointing to `icp.md`), price, format and guarantee, how it is bought, attributes, product proof, answers to objections |
+
+- Sections are a checklist, not mandatory headings: write a section only when there is content. Unknowns become `[question:]` markers.
+- Write headings in the client language, using the same heading for the same section everywhere.
+- Any company-level file can also exist in `products/<slug>/` with the same name. Read the company file, then the product's: a product section replaces the company section with the same heading; other sections are inherited. A product file copies the company file's heading literally; if the company file lacks that section, add it there first.
+- Keep each file under about 1,500 tokens.
 - To find what exists, search `_knowledge/` once for `^summary:`. Read full files only when needed.
 - Every file starts with:
   ```
@@ -40,13 +44,13 @@ _knowledge/
   sources: [_in/<file>, https://...]
   ---
   ```
-- `company.md` has a section for restrictions: forbidden claims, legal and regulatory limits, words to avoid.
-- Every `product.md` has a section for proof: numbers, cases, testimonials, certifications. Real ones only, each with its source.
+- Proof is real only, each item with its source.
 - Inline markers, the same in every language:
-  - `[hypothesis: <origin>]` after anything the client has not confirmed (inferred from material, suggested by Claude, user's guess).
+  - `[hypothesis: <origin>]` after anything the client has not confirmed (inferred from material, suggested by Claude, team). What the team says about the client's customers or market is `[hypothesis: team]` until the client or research confirms it.
   - `[missing: <what>]` where information is needed but unknown. Never invent proof, numbers, testimonials or claims; leave this marker instead.
   - `[question: <what to ask the client>]` for open questions. Search for `[question:` to build the agenda for the next client conversation.
-- Temporary information (offers, campaigns, deadlines) belongs in the deliverable's brief, never in `_knowledge/`.
+- New information that contradicts `_knowledge/` never overwrites it silently: show both versions with their sources, ask the user, then update and log.
+- Temporary information (offers, campaigns, deadlines) belongs in a brief, never in `_knowledge/`.
 - When a skill reads `competitors.md` or an `icp.md` whose `updated` is older than 6 months, warn the user. Do not warn about other files.
 
 ## Deliverables
@@ -62,6 +66,8 @@ _knowledge/
   ---
   ```
   followed by a short brief: objective, offer, deadline, mandatory items, hypotheses the copy relies on.
+- A campaign with several pieces gets its own brief file in `_out/` with channel `brief` (`2026-11-01_cafe-assinatura_brief-black-friday_v1.md`). Its pieces point to it instead of repeating it, and keep only what is specific to them.
+- When the user says the client approved a piece, set `status: approved` and log it. Offer to add it to `brand.md` as an example of the right tone.
 - Keep formatting light so it pastes cleanly into Google Docs or WhatsApp: no tables, no nested lists.
 
 ## Decisions and feedback
@@ -70,6 +76,11 @@ _knowledge/
 - Log without being asked when the user approves a strategic choice (positioning, angle, big idea, tone), when a hypothesis is confirmed or rejected, and when feedback becomes a permanent rule.
 - When the user relays client feedback, ask whether it is a one-off or a permanent rule. If permanent, record it in the relevant `_knowledge/` file.
 - A decision that changes knowledge updates the `_knowledge/` file and is logged. Always both.
+
+## Status and meetings
+
+- Project status: the `summary` of each `_knowledge/` file, deliverables with `status: draft`, and the latest entries of `decisions.md`.
+- Agenda for the next client meeting: the `[question:]` markers, the `[hypothesis:]` markers worth validating, and deliverables awaiting approval.
 
 ## Skills
 
