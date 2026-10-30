@@ -1,0 +1,14 @@
+{
+  "name": "ramonk2o-marketr",
+  "description": "marketr: marketing skills for Claude Code.",
+  "owner": {
+    "name": "ramonk2o"
+  },
+  "plugins": [
+    {
+      "name": "marketr",
+      "source": "./",
+      "description": "Marketing skills that build and use a per-client knowledge base inside the project folder."
+    }
+  ]
+}

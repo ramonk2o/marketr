@@ -1,0 +1,12 @@
+{
+  "name": "marketr",
+  "version": "0.0.1",
+  "description": "Marketing skills that build and use a per-client knowledge base inside the project folder.",
+  "author": {
+    "name": "ramonk2o"
+  },
+  "homepage": "https://github.com/ramonk2o/marketr",
+  "repository": "https://github.com/ramonk2o/marketr",
+  "license": "MIT",
+  "keywords": ["marketing", "knowledge-base"]
+}
