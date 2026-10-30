@@ -32,6 +32,7 @@ After an update, run `/marketr:setup` in existing client folders if a skill says
 ## Skills
 
 - `/marketr:setup`: prepares the current folder for a new client, or upgrades it.
+- `/marketr:discovery`: builds what we know about the client from their material, their web presence and an interview with you; later, processes new material and reviews the knowledge base.
 
 More are on the way; see [BACKLOG.md](BACKLOG.md).
 

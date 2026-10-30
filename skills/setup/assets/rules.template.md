@@ -7,7 +7,7 @@ Managed by the marketr plugin. Conventions version: 1.
 
 - Team language: {{TEAM_LANGUAGE}}. Write `decisions.md` in it. Talk to each user in the language they write in.
 - Client language: {{CLIENT_LANGUAGE}}. Write all content of `_knowledge/` and `_out/` in it, including headings and `_out/` filenames.
-- English: instructions, the fixed folder and file names below, frontmatter keys and values.
+- English: instructions, the fixed folder and file names below, frontmatter keys and values (`summary` included).
 - Slugs (product folders, `_out/` filenames) follow the client language, written in lowercase ASCII with hyphens, no accents: `cafe-assinatura`, not `café-assinatura`.
 
 ## Folders
@@ -41,7 +41,7 @@ Each file answers one question and has one owner skill that deepens it. Any skil
   ---
   summary: one line
   updated: YYYY-MM-DD
-  sources: [_in/<file>, https://...]
+  sources: [_in/<file>, https://..., interview YYYY-MM-DD]
   ---
   ```
 - Proof is real only, each item with its source.

@@ -24,7 +24,7 @@ BACKLOG.md  CHANGELOG.md  README.md  LICENSE
 - Put a skill's permanent rules at the top of its SKILL.md: after compaction only its first ~5,000 tokens survive.
 - Each description says what the skill is for and what it is not for, to avoid collisions with other marketr skills.
 - Never name a file `CLAUDE.md` inside `skills/`: Claude would load it as instructions.
-- Marketr skills other than setup start by checking the generated project's "Conventions version" in its `.claude/rules/marketr.md`. If it is lower than the version they need, they suggest `/marketr:setup`.
+- Every SKILL.md except setup opens with its contract: `Requires conventions: N`, `Reads: ...`, `Writes: ...`, then a rule to run setup when `.claude/rules/marketr.md` is missing and to suggest `/marketr:setup` when its version is lower. See `skills/discovery/SKILL.md`.
 
 ## Cycle
 
@@ -42,7 +42,7 @@ BACKLOG.md  CHANGELOG.md  README.md  LICENSE
    - Remove the item from BACKLOG.md and add it to CHANGELOG.md under a new version.
    - Bump `version` in plugin.json. Without a bump, users do not receive the update.
    - If the generated project's structure or rules changed:
-     - Bump "Conventions version" in the template.
+     - Bump "Conventions version" in the template, then grep "Requires conventions" and review each skill.
      - Add a migration to setup's "Migrations" section when existing projects need files moved or rewritten.
      - Note it in the CHANGELOG.
 
