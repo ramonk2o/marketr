@@ -52,4 +52,4 @@ Products, market and everything else belong to discovery, which asks about them 
 
 ### Migrations
 
-None yet.
+- **2:** adds `channels.md`, which copywrite creates when first needed. No existing file changes.

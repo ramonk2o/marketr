@@ -4,16 +4,11 @@
 
 ## Next
 
-- **copywrite:** writes for any channel using `_knowledge/`.
-  - Planning depth proportional to the channel: direct (SMS, push, subject lines), brief (posts, nurture emails, long ads), full (landing pages, sales emails, VSL).
-  - The structure approval in full mode is a pause for the user, not a mandatory client approval.
-  - Modes: write; revise one of our pieces from feedback (new `v<N+1>`); review a text from someone else; adapt one piece into others.
-  - Reads the campaign brief when a piece belongs to one.
-  - One reference file per channel, loaded on demand. Choose the first two channels.
-  - Fixed English channel ids, defined by the channel references, used in both frontmatter and `_out/` filenames; the topic stays in the client language. Settle before its first release (no `_out/` exists yet, so no migration).
-  - Move the "light formatting" rule from the conventions template to the channel references.
-
 ## Ideas
+
+- campaign planning: multichannel plan and content calendar. Copywrite writes the pieces of a plan; it does not decide what to publish when.
+- results analysis: reads piece and campaign metrics and records what worked in `marketing.md`.
+- Split short-video scripts into their own skill if scenes and production notes outgrow copywrite.
 
 - research: one skill, one reference per target. Shares sources, collection dates, evidence quality and staleness.
   - Audience: voice of customer from customer data, reviews, comments and forums; segmentation; awareness levels. Interview and survey scripts for real customers as a section. Deepens `icp.md`.

@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.0 (2026-11-01)
+
+### Added
+- copywrite: writes, revises, reviews and adapts copy for push, SMS, email, web pages, Instagram posts, short videos, Google Ads and Meta ads. One researched reference per channel with limits, what to deliver, policies and language notes, dated and sourced.
+- copywrite's `check.py`: measures each field against its limit (full-width characters, ad placeholders) and gives SMS encoding, segments and a GSM-7 version.
+- `channels.md` knowledge file and its guide: the formats agreed with each client, per channel.
+
+### Changed
+- Conventions version 2: `channels.md`, fixed channel ids, tables allowed in deliverables where the format needs them. Existing projects: run `/marketr:setup` to upgrade; no files move.
+
 ## 0.0.3 (2026-10-30)
 
 ### Changed

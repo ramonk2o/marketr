@@ -14,7 +14,7 @@ A Claude Code plugin with marketing skills. Each skill reads and writes a per-cl
 ```
 .claude-plugin/plugin.json        plugin manifest; the only place with the version
 .claude-plugin/marketplace.json   this repo is also the marketplace (ramonk2o-marketr)
-skills/<name>/SKILL.md            one folder per skill; extra material in references/ or assets/
+skills/<name>/SKILL.md            one folder per skill; extra material in references/, assets/ or scripts/
 references/knowledge/<file>.md    how to fill each _knowledge file, shared by every skill that writes it
 example/_in/                      raw material of a fictional client, for testing
 BACKLOG.md  CHANGELOG.md  README.md  LICENSE
