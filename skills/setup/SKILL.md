@@ -53,3 +53,4 @@ Products, market and everything else belong to discovery, which asks about them 
 ### Migrations
 
 - **2:** adds `channels.md`, which copywrite creates when first needed. No existing file changes.
+- **3:** research collections go in `_in/` as `YYYY-MM-DD_research-<target>-<topic>.md`. No existing file changes.

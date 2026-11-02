@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0 (2026-11-02)
+
+### Added
+- research: audience and competitor research from evidence. Client exports first, then public reviews, search language and competitors' sites; verbatim, anonymized quotes tagged by whose voice they are; evidence rated strong, moderate or weak; collector subagents for larger scopes; a 5-question customer questionnaire when evidence is weak.
+- Trigger tests in `evals/triggers/` (`claude plugin eval`), checking that discovery, research and copywrite fire on the right requests.
+
+### Changed
+- Conventions version 3: research collections live in `_in/` as `YYYY-MM-DD_research-<target>-<topic>.md`. Existing projects: run `/marketr:setup`; no files move.
+- `icp.md` and `competitors.md` guides: segments by situation, awareness per segment, objections before and after buying, evidence notes, ranked purchase criteria, and a test for real gaps.
+- discovery: skips research collections and leaves customer-voice mining to research.
+
 ## 0.1.0 (2026-11-01)
 
 ### Added

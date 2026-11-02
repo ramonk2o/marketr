@@ -17,6 +17,7 @@ A Claude Code plugin with marketing skills. Each skill reads and writes a per-cl
 skills/<name>/SKILL.md            one folder per skill; extra material in references/, assets/ or scripts/
 references/knowledge/<file>.md    how to fill each _knowledge file, shared by every skill that writes it
 example/_in/                      raw material of a fictional client, for testing
+evals/triggers/                   trigger tests: which skill fires on which request
 BACKLOG.md  CHANGELOG.md  README.md  LICENSE
 ```
 
@@ -38,7 +39,11 @@ BACKLOG.md  CHANGELOG.md  README.md  LICENSE
    cp -R example/_in "$TMPDIR/marketr-test/"
    cd "$TMPDIR/marketr-test" && claude --plugin-dir <path-to-this-repo>
    ```
-   Then run `claude plugin validate .` from this repo.
+   Then run `claude plugin validate .` from this repo. When a skill's description changes, also run the trigger tests (real, billed runs):
+   ```
+   claude plugin eval . --tag triggers --ablation none -j 4
+   ```
+   Non-interactive runs (`claude -p`) cannot read the plugin folder unless you pass `--add-dir <path-to-this-repo>`.
 5. **Ship:**
    - Remove the item from BACKLOG.md and add it to CHANGELOG.md under a new version.
    - Bump `version` in plugin.json. Without a bump, users do not receive the update.

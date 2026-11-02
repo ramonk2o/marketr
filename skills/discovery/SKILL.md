@@ -1,6 +1,6 @@
 ---
 name: discovery
-description: Builds and maintains a client's marketing knowledge base (_knowledge/) from the material in _in/, the client's own web presence and an interview with the team. Use it for a client's first discovery or onboarding (also called anamnesis or anamnese), whenever new material arrives (call notes, meeting transcripts, briefings, files dropped in _in/), whenever the user mentions that something about the client changed (prices, products, goals, people), and to review or audit what is known about the client. Use it even when the user just says "process this", "the client sent new stuff" or "let's get to know this client". Not for in-depth audience or competitor research (research) or for defining positioning and tone of voice (branding).
+description: Builds and maintains a client's marketing knowledge base (_knowledge/) from the material in _in/, the client's own web presence and an interview with the team. Use it for a client's first discovery or onboarding (also called anamnesis or anamnese), whenever new material arrives (call notes, meeting transcripts, briefings, files dropped in _in/), whenever the user mentions that something about the client changed (prices, products, goals, people), and to review or audit what is known about the client. Use it even when the user just says "process this", "the client sent new stuff" or "let's get to know this client". Not for mining what end customers say (reviews, support chats, comment exports) or studying competitors (research), or for defining positioning and tone of voice (branding).
 ---
 
 # Discovery
@@ -28,7 +28,7 @@ The project's conventions (`.claude/rules/marketr.md`) already apply. These are 
 Search `_knowledge/` for `^summary:` and `^sources:`, and list `_in/`. Then pick the mode; if the user's request already says what they want, follow it.
 
 - **First run:** `_knowledge/` is empty, or a first run was interrupted (some files from step 2.4 are missing). Go to 2, skipping what is done.
-- **Update:** `_in/` has files no `sources` lists, or the user brings new information. Go to 3.
+- **Update:** `_in/` has files no `sources` lists, or the user brings new information. Go to 3. Skip `_in/*_research-*` files: they are what customers and competitors say, gathered by research, and reading them as client statements would put a reviewer's words in the client's mouth.
 - **Scope:** the user names one product or topic. Run only the matching part of 2 or 3.
 - **Review:** the user asks to review or audit the knowledge base. Go to 4.
 

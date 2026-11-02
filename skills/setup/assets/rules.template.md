@@ -1,6 +1,6 @@
 # {{CLIENT_NAME}}: marketing project
 
-Managed by the marketr plugin. Conventions version: 2.
+Managed by the marketr plugin. Conventions version: 3.
 `/marketr:setup` overwrites this file on upgrade. Put project-specific notes in `CLAUDE.md`, never here.
 
 ## Languages
@@ -13,6 +13,7 @@ Managed by the marketr plugin. Conventions version: 2.
 ## Folders
 
 - `_in/`: raw material from the client and the team's own notes and call transcripts. Name new files with a date prefix: `2026-10-30_call-kickoff.md`. Read only: never edit, move or delete.
+- Research collections also live in `_in/`, named `YYYY-MM-DD_research-<target>-<topic>.md`: evidence gathered from customers, reviews and competitors, not statements by the client or the team.
 - `_knowledge/`: curated, durable knowledge about the client. The source every skill reads.
 - `_out/`: deliverables.
 - `decisions.md`: append-only history of decisions. To check the current state, read `_knowledge/`; search `decisions.md` for a term instead of reading it whole.
