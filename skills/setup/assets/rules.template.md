@@ -1,6 +1,6 @@
 # {{CLIENT_NAME}}: marketing project
 
-Managed by the marketr plugin. Conventions version: 3.
+Managed by the marketr plugin. Conventions version: 4.
 `/marketr:setup` overwrites this file on upgrade. Put project-specific notes in `CLAUDE.md`, never here.
 
 ## Languages
@@ -27,8 +27,8 @@ Each file answers one question and has one owner skill that deepens it. Any skil
 | `company.md` | who we are | discovery | what it does, business model, size and stage, history (facts), portfolio and offer architecture, restrictions (legal, regulatory, forbidden claims and words), institutional proof |
 | `icp.md` | who buys | research | segments, decision maker and influencers, pains, desires, triggers, objections (in the customer's words, no answers), awareness level, where they are, literal language |
 | `competitors.md` | against whom | research | direct competitors, alternatives (including doing nothing), comparison, how they position, gaps |
-| `positioning.md` | why us | branding | category, for whom, main difference, reason to believe, core promise, message pillars |
-| `brand.md` | how we speak | branding | personality, tone by context, vocabulary (use, avoid for style), told story, right and wrong examples |
+| `positioning.md` | why us | branding | positioning statement, main alternative, we are / we are not, we don't say, message pillars, lead pillar by segment |
+| `brand.md` | how we speak | branding | personality, signature moves, tone by context, vocabulary (use, avoid), told story, right and wrong examples |
 | `channels.md` | how we do each channel | copywrite | one section per channel in use: format (length, blocks, CTAs), conventions (emojis, hashtags, signature), tools and their constraints, client rules |
 | `marketing.md` | what we do and what worked | discovery | dated goals with KPIs, budget, approvers, journey and sales process, channels and their state, what was tested and results, recurring seasonality, asset inventory (what and where, not the content) |
 | `products/<slug>/product.md` | what we sell (products or services) | discovery | what it is, mechanism, transformation, segment served (pointing to `icp.md`), price, format and guarantee, how it is bought, attributes, product proof, answers to objections |
@@ -67,9 +67,10 @@ Each file answers one question and has one owner skill that deepens it. Any skil
   channel: <channel>
   ---
   ```
-  `channel` is a fixed English id: `push`, `sms`, `email`, `web`, `post`, `video`, `google-ads`, `meta-ads`, or `brief` and `questionnaire`. It is followed by a short brief: objective, offer, deadline, mandatory items, hypotheses the copy relies on.
+  `channel` is a fixed English id: `push`, `sms`, `email`, `web`, `post`, `video`, `google-ads`, `meta-ads`, or `brief`, `questionnaire` and `strategy`. A piece follows it with a short brief: objective, offer, deadline, mandatory items, hypotheses the copy relies on. A `strategy` page (a proposal for the client to approve, such as a positioning) follows it with `Proposes: _knowledge/<file>`, the knowledge file or files its approval changes.
 - A campaign with several pieces gets its own brief file in `_out/` with channel `brief` (`2026-11-01_cafe-assinatura_brief-black-friday_v1.md`). Its pieces point to it instead of repeating it, and keep only what is specific to them.
 - When the user says the client approved a piece, set `status: approved` and log it. Offer to add it to `brand.md` as an example of the right tone.
+- When the client approves a `strategy` page, set `status: approved` and apply it to the file it proposes: remove the `[hypothesis:]` markers on the choices it covers (not on the facts and objections they point to, which approval does not confirm), and log it. If the client changed something, update the file first and log the change. If the client approves only some of the files it proposes, still set `status: approved`, add `Rejected: _knowledge/<file>` under `Proposes:` for the rest, and apply only the approved ones. The knowledge file is the current state; the page is a dated proposal and is never updated afterwards. A draft page with a higher version of the same topic is superseded and no longer awaits approval.
 - Keep formatting light so it pastes cleanly into Google Docs or WhatsApp: no nested lists, and tables only where the format needs one (ad assets with character counts, a video script by time).
 
 ## Decisions and feedback

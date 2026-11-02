@@ -72,6 +72,6 @@ In the team language, short:
 - what stays weak or unknown, written as `[question:]` markers in the knowledge file so it reaches the next client meeting;
 - sources not reached and how to get them;
 - a reminder to spot-check web quotes before using them in public copy;
-- the next step: copywrite, or positioning work (branding, not yet available).
+- the next step: copywrite, or branding to define or rethink the positioning when findings support or contradict a pillar.
 
 When evidence is weak, offer the customer questionnaire from the reference (about 5 questions the client can send to 10 customers on WhatsApp), saved in `_out/` with channel `questionnaire`. Answers dropped in `_in/` feed the next update.

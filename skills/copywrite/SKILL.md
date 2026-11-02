@@ -1,6 +1,6 @@
 ---
 name: copywrite
-description: Writes, revises, reviews and adapts copy for a client's brand channels, organic or paid, using what the project knows about them (_knowledge/). Channels - push notifications, SMS, email, website and landing pages, Instagram posts and carousels, short videos (Reels, TikTok, Shorts), Google Ads (all campaign types) and Meta ads (Facebook and Instagram). Use whenever the user wants copy, a headline, a subject line, an ad, a caption, a script or a page for the client, rewritten from feedback, critiqued, or turned into another channel ("adapt this email to SMS", "the client asked for changes to the post", "what do you think of this copy?"), even without the word copy. Not for building the client's knowledge (discovery), audience or competitor research (research), defining positioning or tone of voice (branding), or the user's own personal essays, posts and emails.
+description: Writes, revises, reviews and adapts copy for a client's brand channels, organic or paid, using what the project knows about them (_knowledge/). Channels - push notifications, SMS, email, website and landing pages, Instagram posts and carousels, short videos (Reels, TikTok, Shorts), Google Ads (all campaign types) and Meta ads (Facebook and Instagram). Use whenever the user wants copy, a headline, a tagline or slogan, a subject line, an ad, a caption, a script or a page for the client, rewritten from feedback, critiqued, or turned into another channel ("adapt this email to SMS", "the client asked for changes to the post", "what do you think of this copy?"), even without the word copy. Not for building the client's knowledge (discovery), audience or competitor research (research), defining positioning or tone of voice (branding), or the user's own personal essays, posts and emails.
 ---
 
 # Copywrite
@@ -65,7 +65,7 @@ Plan in proportion to the piece, since a full plan for an SMS wastes more time t
 3. Write what the user accepts to `channels.md`, with its origin, before writing the piece.
 
 **Angle:** the idea that makes this reader act now.
-- If `positioning.md` has message pillars, choose one and say which. Check what was tested and its results in `marketing.md`, so a failed angle is not repeated.
+- If `positioning.md` has message pillars, start from the lead pillar of the brief's segment and say which. Respect its "we don't say" list and the signature moves in `brand.md`. Check what was tested and its results in `marketing.md`, so a failed angle is not repeated.
 - Otherwise, or for a campaign or a long piece, propose 2 or 3 angles, each with a sample opening line and why it fits this reader. The user chooses.
 - Record the chosen angle in the brief. Log it in `decisions.md` only when it is a campaign's angle or will be reused: a log of every piece's angle buries the decisions that matter.
 

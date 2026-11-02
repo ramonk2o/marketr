@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.3.0 (2026-11-02)
+
+### Added
+- branding: positioning and tone of voice as decisions, not proofs. A short interview, 2 or 3 options for the team, a one-recommendation strategy page the client approves (pasteable into WhatsApp), and voice chosen from samples. Names the customer's main alternative, checks claims against each competitor, tells the client what the promise commits them to, and sends one page when positioning and voice run together. Resumes from the latest strategy page of each topic; a rejected rethink restores the approved text.
+- Trigger tests for branding, and branding excluded where it should not fire.
+
+### Changed
+- Conventions version 4: channel id `strategy` (a proposal with `Proposes: _knowledge/<file>`); approving one removes the markers on its choices, not on the facts they point to; a higher version supersedes a draft. Existing projects: run `/marketr:setup`; no files move now, and branding restructures an old `positioning.md` the next time it runs.
+- `positioning.md` guide: positioning statement whose "because" proves the difference, main alternative, we are / we are not, we don't say, pillars that point to facts and objections, lead pillar by segment, the obvious choice executed well. `brand.md` guide: traits with writing moves, signature moves, one screen.
+- discovery leaves positioning decisions to branding; copywrite starts from the segment's lead pillar and owns taglines; research points to branding when findings touch a pillar.
+
 ## 0.2.0 (2026-11-02)
 
 ### Added

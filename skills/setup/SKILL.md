@@ -54,3 +54,4 @@ Products, market and everything else belong to discovery, which asks about them 
 
 - **2:** adds `channels.md`, which copywrite creates when first needed. No existing file changes.
 - **3:** research collections go in `_in/` as `YYYY-MM-DD_research-<target>-<topic>.md`. No existing file changes.
+- **4:** adds the channel id `strategy` and the rule for applying an approved strategy page, and new sections in `positioning.md` and `brand.md`. No file changes now: branding restructures an existing `positioning.md` the next time it runs.

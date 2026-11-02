@@ -34,6 +34,7 @@ After an update, run `/marketr:setup` in existing client folders if a skill says
 - `/marketr:setup`: prepares the current folder for a new client, or upgrades it.
 - `/marketr:discovery`: builds what we know about the client from their material, their web presence and an interview with you; later, processes new material and reviews the knowledge base.
 - `/marketr:research`: finds out who buys and in what words, and what competitors offer and fail at, from the client's exports, public reviews, searches and competitors' sites.
+- `/marketr:branding`: defines the positioning and the tone of voice with the team, and writes a short page for the client to approve.
 - `/marketr:copywrite`: writes, revises, reviews and adapts copy for push, SMS, email, website and landing pages, Instagram posts, short videos, Google Ads and Meta ads, within each platform's limits and the formats agreed for the client.
 
 More are on the way; see [BACKLOG.md](BACKLOG.md).

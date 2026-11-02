@@ -45,14 +45,14 @@ Search `_knowledge/` for `^summary:` and `^sources:`, and list `_in/`. Then pick
    | Products and services | `products/<slug>/product.md` for each one |
    | Customers | draft `icp.md` |
    | Market and competitors | draft `competitors.md` |
-   | Brand and positioning | draft `brand.md`; draft `positioning.md` only from clear client statements or a choice made in this interview |
+   | Brand and positioning | draft `brand.md` from existing material; draft `positioning.md` only from clear client statements; for anything to decide, suggest branding |
    | Goals and marketing | `marketing.md` |
 
    - Ask 3 to 5 questions at a time, only about what is missing: the user's time is the scarce resource. Prefer concrete questions ("what does a customer usually ask before buying?") over abstract ones ("what is your value proposition?"); people answer the first well and the second with clichés.
    - If an answer belongs to another block, record it there anyway.
    - "I don't know" is a valid answer: record it as `[question:]`, or as a hypothesis if the user offers a guess.
    - The user can skip any block. Note it in the report.
-   - For a new company, where there is nothing to document yet, turn decisions into 2 or 3 options with your reasoning. The user chooses; log the choice in `decisions.md`.
+   - For a new company, where there is nothing to document yet, turn decisions into 2 or 3 options with your reasoning. The user chooses; log the choice in `decisions.md`. Positioning and tone are the exception: leave them to branding, so two skills do not produce competing positionings.
 5. **Close** with the report (section 5).
 
 ## 3. Update
