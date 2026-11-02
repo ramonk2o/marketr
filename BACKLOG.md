@@ -16,5 +16,5 @@
 - copywrite: a WhatsApp channel for sales and follow-up scripts, widely used by small businesses in Brazil.
 - offer design: price, bundles, guarantee. Today branding only flags offer problems as `[question:]` in `product.md`.
 - Per-deliverable language override (client with more than one market).
-- With the first migration: move setup's "Migrations" to `skills/setup/references/migrations.md`, read only when upgrading.
+- Move setup's "Migrations" to `skills/setup/references/migrations.md`, read only when upgrading, once it grows past a few entries.
 - A PreToolUse hook blocking writes to `_in/`, only if the rule is broken in practice.
