@@ -36,6 +36,7 @@ After an update, run `/marketr:setup` in existing client folders if a skill says
 - `/marketr:research`: finds out who buys and in what words, and what competitors offer and fail at, from the client's exports, public reviews, searches and competitors' sites.
 - `/marketr:branding`: defines the positioning and the tone of voice with the team, and writes a short page for the client to approve.
 - `/marketr:copywrite`: writes, revises, reviews and adapts copy for push, SMS, email, website and landing pages, Instagram posts, short videos, Google Ads and Meta ads, within each platform's limits and the formats agreed for the client.
+- `/marketr:export`: packages what we know about the client for another project: a zip for another marketr folder, a developer or an agency, or one Markdown file for a Claude, ChatGPT or Gemini project.
 
 More are on the way; see [BACKLOG.md](BACKLOG.md).
 

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0 (2026-11-03)
+
+### Added
+- export: packages the client's knowledge base for use elsewhere. A zip with `_knowledge/` and a README for another marketr project, a developer or an agency; one consolidated Markdown file for a Claude, ChatGPT or Gemini project. Keeps the markers and explains them, explains product inheritance, labels positioning and voice the client has not approved, asks before including budget, approvers or results, and logs each export so the team knows who holds an old copy.
+- Trigger tests for export.
+
+### Changed
+- Conventions version 5: channel id `export`, a snapshot with no frontmatter. Existing projects: run `/marketr:setup`; no files move.
+
 ## 0.3.0 (2026-11-02)
 
 ### Added

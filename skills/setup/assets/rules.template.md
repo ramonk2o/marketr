@@ -1,6 +1,6 @@
 # {{CLIENT_NAME}}: marketing project
 
-Managed by the marketr plugin. Conventions version: 4.
+Managed by the marketr plugin. Conventions version: 5.
 `/marketr:setup` overwrites this file on upgrade. Put project-specific notes in `CLAUDE.md`, never here.
 
 ## Languages
@@ -67,7 +67,8 @@ Each file answers one question and has one owner skill that deepens it. Any skil
   channel: <channel>
   ---
   ```
-  `channel` is a fixed English id: `push`, `sms`, `email`, `web`, `post`, `video`, `google-ads`, `meta-ads`, or `brief`, `questionnaire` and `strategy`. A piece follows it with a short brief: objective, offer, deadline, mandatory items, hypotheses the copy relies on. A `strategy` page (a proposal for the client to approve, such as a positioning) follows it with `Proposes: _knowledge/<file>`, the knowledge file or files its approval changes.
+  `channel` is a fixed English id: `push`, `sms`, `email`, `web`, `post`, `video`, `google-ads`, `meta-ads`, or `brief`, `questionnaire`, `strategy` and `export`. A piece follows it with a short brief: objective, offer, deadline, mandatory items, hypotheses the copy relies on. A `strategy` page (a proposal for the client to approve, such as a positioning) follows it with `Proposes: _knowledge/<file>`, the knowledge file or files its approval changes.
+- An `export` is a snapshot of `_knowledge/` packaged for another project: a `.zip` or a `.md`, with no frontmatter (a zip cannot hold one, and the reader of a consolidated file has no use for `status`). It is never approved or edited; a new export is a new version.
 - A campaign with several pieces gets its own brief file in `_out/` with channel `brief` (`2026-11-01_cafe-assinatura_brief-black-friday_v1.md`). Its pieces point to it instead of repeating it, and keep only what is specific to them.
 - When the user says the client approved a piece, set `status: approved` and log it. Offer to add it to `brand.md` as an example of the right tone.
 - When the client approves a `strategy` page, set `status: approved` and apply it to the file it proposes: remove the `[hypothesis:]` markers on the choices it covers (not on the facts and objections they point to, which approval does not confirm), and log it. If the client changed something, update the file first and log the change. If the client approves only some of the files it proposes, still set `status: approved`, add `Rejected: _knowledge/<file>` under `Proposes:` for the rest, and apply only the approved ones. The knowledge file is the current state; the page is a dated proposal and is never updated afterwards. A draft page with a higher version of the same topic is superseded and no longer awaits approval.
