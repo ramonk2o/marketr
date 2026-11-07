@@ -1,6 +1,14 @@
 # Changelog
 
-## 0.4.0 (2026-11-03)
+All notable changes to this plugin are documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
+applied to how the skills behave.
+
+## [Unreleased]
+
+## [0.4.0] - 2026-11-03
 
 ### Added
 - export: packages the client's knowledge base for use elsewhere. A zip with `_knowledge/` and a README for another marketr project, a developer or an agency; one consolidated Markdown file for a Claude, ChatGPT or Gemini project. Keeps the markers and explains them, explains product inheritance, labels positioning and voice the client has not approved, asks before including budget, approvers or results, and logs each export so the team knows who holds an old copy.
@@ -9,7 +17,7 @@
 ### Changed
 - Conventions version 5: channel id `export`, a snapshot with no frontmatter. Existing projects: run `/marketr:setup`; no files move.
 
-## 0.3.0 (2026-11-02)
+## [0.3.0] - 2026-11-02
 
 ### Added
 - branding: positioning and tone of voice as decisions, not proofs. A short interview, 2 or 3 options for the team, a one-recommendation strategy page the client approves (pasteable into WhatsApp), and voice chosen from samples. Names the customer's main alternative, checks claims against each competitor, tells the client what the promise commits them to, and sends one page when positioning and voice run together. Resumes from the latest strategy page of each topic; a rejected rethink restores the approved text.
@@ -20,7 +28,7 @@
 - `positioning.md` guide: positioning statement whose "because" proves the difference, main alternative, we are / we are not, we don't say, pillars that point to facts and objections, lead pillar by segment, the obvious choice executed well. `brand.md` guide: traits with writing moves, signature moves, one screen.
 - discovery leaves positioning decisions to branding; copywrite starts from the segment's lead pillar and owns taglines; research points to branding when findings touch a pillar.
 
-## 0.2.0 (2026-11-02)
+## [0.2.0] - 2026-11-02
 
 ### Added
 - research: audience and competitor research from evidence. Client exports first, then public reviews, search language and competitors' sites; verbatim, anonymized quotes tagged by whose voice they are; evidence rated strong, moderate or weak; collector subagents for larger scopes; a 5-question customer questionnaire when evidence is weak.
@@ -31,7 +39,7 @@
 - `icp.md` and `competitors.md` guides: segments by situation, awareness per segment, objections before and after buying, evidence notes, ranked purchase criteria, and a test for real gaps.
 - discovery: skips research collections and leaves customer-voice mining to research.
 
-## 0.1.0 (2026-11-01)
+## [0.1.0] - 2026-11-01
 
 ### Added
 - copywrite: writes, revises, reviews and adapts copy for push, SMS, email, web pages, Instagram posts, short videos, Google Ads and Meta ads. One researched reference per channel with limits, what to deliver, policies and language notes, dated and sourced.
@@ -41,13 +49,13 @@
 ### Changed
 - Conventions version 2: `channels.md`, fixed channel ids, tables allowed in deliverables where the format needs them. Existing projects: run `/marketr:setup` to upgrade; no files move.
 
-## 0.0.3 (2026-10-30)
+## [0.0.3] - 2026-10-30
 
 ### Changed
 
 - `setup` explains the reason behind each step, so it handles cases its rules did not foresee. Suggests discovery as the next step.
 
-## 0.0.2 (2026-10-30)
+## [0.0.2] - 2026-10-30
 
 ### Added
 
@@ -58,7 +66,7 @@
 
 - Conventions version 1 refined before any real use: knowledge files answer one question each with an owner skill, section-based product overrides, contradiction, approval and campaign brief rules, interview as a source, frontmatter fully in English.
 
-## 0.0.1 (2026-10-30)
+## [0.0.1] - 2026-10-30
 
 ### Added
 
